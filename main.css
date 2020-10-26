@@ -46,6 +46,7 @@ body{
 .form-control label{
     display: inline-block;
     margin-bottom: 5px;
+    cursor: pointer;/*añadido*/
 }
 
 .form-control input{
@@ -78,7 +79,7 @@ body{
     visibility: visible;
 }
 
-.form-control.success i.fa-exclamation-circle{
+.form-control.error i.fa-exclamation-circle{/*Corrección*/
     color: #e74c3c;
     visibility: visible;
 }

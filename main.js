@@ -34,6 +34,14 @@ function checkInputs() {
     } else {
         setSuccessFor(password);
     }
+
+    if (password2Value === "") {
+        setErrorFor(password2, "El campo password es obligatorio");
+    } else if (passwordValue !== password2Value) {
+        setErrorFor(password2, "Las passwords no coinciden");
+    } else {
+        setSuccessFor(password2);
+    }
 }
 
 function setErrorFor(input, message) {
